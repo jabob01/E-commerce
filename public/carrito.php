@@ -5,6 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 include('conexion.php');
 
 // Eliminar un producto del carrito si se especifica
+// Eliminar un producto del carrito si se especifica
 if (isset($_GET['eliminar'])) {
     $id_eliminar = $_GET['eliminar'];
     if (isset($_SESSION['carrito'][$id_eliminar])) {
