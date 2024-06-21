@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Cuenta</title>
+    <link href="./css/tailwind.css" rel="stylesheet"><!-- Assuming Tailwind CSS is in a css directory -->
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+
+    <div class="bg-cover bg-center w-full h-full fixed top-0 left-0 opacity-50" style="background-image: url('img/fondo.jpg');"></div>
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative z-10">
+
+        <h1 class="text-2xl font-semibold mb-6 text-center">Crear nueva cuenta</h1>
+
+        <form method="post" action="usuario_registrar.php">
+            <div class="mb-4">
+                <label for="txtnombre1" class="block text-sm font-semibold text-gray-800">Nombre</label>
+                <input type="text" name="txtnombre1" id="txtnombre1" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-200" autocomplete="off" required>
+            </div>
+            <div class="mb-4">
+                <label for="txtcorreo1" class="block text-sm font-semibold text-gray-800">Correo electrónico</label>
+                <input type="email" name="txtcorreo1" id="txtcorreo1" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-200" autocomplete="off" required>
+            </div>
+            <div class="mb-6">
+                <label for="txtpassword1" class="block text-sm font-semibold text-gray-800">Contraseña</label>
+                <input type="password" name="txtpassword1" id="txtpassword1" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-200" autocomplete="off" required>
+            </div>
+            <button type="submit" name="btnregistrar" class="bg-green-600 text-white font-semibold py-3 px-6 rounded-lg w-full transition-colors duration-300 hover:bg-green-500">Crea nueva cuenta</button>
+            <p class="mt-4 text-center">¿Ya tienes cuenta?
+                <a href="index.php" class="text-blue-500 hover:underline">Iniciar sesión</a>
+            </p>
+        </form>
+
+    </div>
+</body>
+</html>
