@@ -37,10 +37,10 @@ else
     ?>
 	<div class="ContenedorTabla" >
 	<form method="POST">
-	<h1>Lista de categorías de productos</h1>
+	<h1>Lista de categorías</h1>
 	<div class="ContBuscar">
 	<div style="float: left;">
-	<a href="categoria_tabla.php" class="BotonesTeam">Inicio</a>
+	<a href="inicio.html" class="BotonesTeam">Inicio</a>
 	<input class="BotonesTeam" type="submit" value="Buscar" name="btnbuscar">
 	<input class="CajaTextoBuscar" type="text" name="txtbuscar"  placeholder="Ingresar categoría" autocomplete="off" >
 	</div>

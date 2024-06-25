@@ -12,21 +12,25 @@ if(isset($_SESSION['usuarioingresando']))
     header('location: index.php');
 }
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title>E-COMMERCE</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <title>E-COMMERCE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="./css/tailwind.css" rel="stylesheet">
 </head>
 <body>
-<div class="BarraLateral">
-<ul>
-    <li><a href="productos_tabla.php" >• Productos</a></li>
-    <li><a href="categoria_tabla.php" >• Categoría</a></li>
-	<li><a href="carrito.php" >• Carritos</a></li>
-    <li><a href="cerrar_sesion.php" >• Cerrar sesión</a></li>
-</ul>
-<hr>
-</div>
+  <div class="BarraLateral bg-gray-200 p-4">
+    <ul>
+      <li><a href="inicio.html" class="block py-2 border-b border-gray-300">• Inicio</a></li>
+      <li><a href="productos_tabla.php" class="block py-2 border-b border-gray-300">• Productos</a></li>
+      <li><a href="categoria_tabla.php" class="block py-2 border-b border-gray-300">• Categoría</a></li>
+      <li><a href="carrito.php" class="block py-2 border-b border-gray-300">• Carritos</a></li>
+      <li><a href="cerrar_sesion.php" class="block py-2">• Cerrar sesión</a></li>
+    </ul>
+  </div>
 </body>
 </html>
+

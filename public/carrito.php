@@ -1,24 +1,17 @@
 <?php
+// Inicia la sesión si no está iniciada
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-include('conexion.php');
 
-// Eliminar un producto del carrito si se especifica
+include('conexion.php');
+include("barra_lateral.php");
+
 // Eliminar un producto del carrito si se especifica
 if (isset($_GET['eliminar'])) {
     $id_eliminar = $_GET['eliminar'];
     if (isset($_SESSION['carrito'][$id_eliminar])) {
         unset($_SESSION['carrito'][$id_eliminar]);
-    }
-}
-
-// Actualizar la cantidad de un producto en el carrito
-if (isset($_POST['actualizar'])) {
-    foreach ($_POST['cantidad'] as $id_producto => $cantidad) {
-        if (isset($_SESSION['carrito'][$id_producto])) {
-            $_SESSION['carrito'][$id_producto]['cantidad'] = $cantidad;
-        }
     }
 }
 
@@ -77,7 +70,6 @@ if (isset($_GET['pag'])) {
             </tr>
         </table>
         <div style="text-align: right;">
-            <input type="submit" name="actualizar" value="Actualizar Cantidades">
             <a href="productos_tabla.php?pag=<?php echo $pagina; ?>" class="BotonesTeam5">Continuar Comprando</a>
         </div>
     </form>

@@ -11,7 +11,7 @@ $nr = mysqli_num_rows($buscandousu);
 if($nr == 1)
 {
 $_SESSION['usuarioingresando']=$correo;
-header("Location: productos_tabla.php");
+header("Location: inicio.html");
 }
 else if ($nr == 0) 
 {
