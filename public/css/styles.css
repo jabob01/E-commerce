@@ -296,3 +296,13 @@ background-color:rgba(0, 0, 0, 0.5);
 width:100%;
 height:100%;
 }
+ /* Estilos adicionales */
+ body {
+    background-color: #dde8ff; /* Color de fondo en modo claro */
+  }
+  .dark-mode body {
+    background-color: #1a202c; /* Color de fondo en modo oscuro */
+  }
+  .FormCajaLogin {
+    /* Estilos para tu caja de login si es necesario */
+  }
