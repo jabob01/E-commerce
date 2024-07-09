@@ -27,7 +27,6 @@ if(isset($_SESSION['usuarioingresando']))
       <li><a href="inicio.html" class="block py-2 border-b border-gray-300">• Inicio</a></li>
       <li><a href="productos_tabla.php" class="block py-2 border-b border-gray-300">• Productos</a></li>
       <li><a href="categoria_tabla.php" class="block py-2 border-b border-gray-300">• Categoría</a></li>
-      <li><a href="carrito.php" class="block py-2 border-b border-gray-300">• Carritos</a></li>
       <li><a href="cerrar_sesion.php" class="block py-2">• Cerrar sesión</a></li>
     </ul>
   </div>

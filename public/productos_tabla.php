@@ -38,6 +38,12 @@ $resultadoMaximo = mysqli_query($conn, "SELECT count(*) as num_productos FROM pr
 $maxusutabla = mysqli_fetch_assoc($resultadoMaximo)['num_productos'];
 ?>
 <div class="ContenedorTabla">
+    <?php
+    if (isset($_SESSION['mensaje'])) {
+        echo "<p class='mensaje'>" . $_SESSION['mensaje'] . "</p>";
+        unset($_SESSION['mensaje']);
+    }
+    ?>
     <form method="POST">
         <h1>Lista de productos</h1>
         <div class="ContBuscar">
@@ -48,6 +54,7 @@ $maxusutabla = mysqli_fetch_assoc($resultadoMaximo)['num_productos'];
             </div>
             <div style="float:right;">
                 <?php echo "<a class='BotonesTeam5' href=\"productos_registrar.php?pag=$pagina\">Agregar producto</a>";?>
+                <a class='BotonesTeam5' href="mostrar_carrito.php">Ver Carrito</a>
             </div>
         </div>
     </form>
